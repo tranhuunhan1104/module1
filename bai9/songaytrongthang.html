@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Kiểm tra số ngày trong tháng </h1>
+    <input type="text" name="" id="thang"><br>
+    <input onclick="xu_ly()" type="button" value="check" min="1" max="12" >
+    <p id="show"></p>
+    <script>
+      function xu_ly(){
+        var thang = document.getElementById('thang').value;
+        if (thang == 1 || thang == 3 || thang == 5 || thang == 7 || thang ==8 || thang == 10 || thang == 12) {
+            alert('thang co 31 ngay')
+        } else if (thang == 4 || thang == 6 || thang == 9 || thang ==11){
+            alert('thang co 30 ngay')
+        
+         } else {
+            alert('thang co 28 ngay hoac 29 ngay')   
+        }
+        
+      }
+       
+    </script>
+</body>
+</html>
