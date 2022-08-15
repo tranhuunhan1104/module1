@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = prompt('nhap so a vao')
+        var b = prompt('nhap so b vao')
+        if (a % b == 0) {
+            alert('a chia het cho b')
+
+        } else {
+            alert('a khong chia het cho b')
+
+        }
+        var age = prompt('nhap so tuoi')
+        if (age >= 16) {
+            alert('du tuoi hoc cap 3')
+
+        } else {
+            alert('khong du tuoi hoc cap 3')
+
+        }
+        var a = prompt('nhap vao so bat ki')
+        if (a > 0) {
+            alert('lon hon 0')
+
+        } else if (a < 0) {
+            alert('nho hon 0')
+        } else {
+            alert('bang 0')
+
+        }
+        var a = prompt('Nhập')
+        var b = prompt('Nhập')
+        var c = prompt('nhập')
+        if (a > b && a > c) {
+            alert('a lớn nhất')
+        } else if (b > c) {
+            alert('b lớn nhất')
+        }
+        else {
+            alert('c lớn nhất')
+        }
+        var a = parseInt(prompt('diem bai kiem tra'))
+        var b = parseInt(prompt('diem thi giua ki'))
+        var c = parseInt(prompt('diem thi cuoi ki'))
+        var dtb = (a + b * 2 + c * 3) / 6
+
+
+        if (dtb >= 8) {
+            alert('hoc sinh gioi');
+
+        } else if (6.5 <= dtb && dtb < 8) {
+            alert('hoc sinh tien tien');
+
+        } else if (5 <= dtb && dtb < 6.5) {
+            alert('hoc sinh trung binh');
+        } else {
+            alert('hoc sinh yeu');
+        }
+        var mang = prompt('nhap mang')
+        var so_phut = prompt('nhap so phut')
+        if (mang == ' viettel') {
+            var cuoc = so_phut * 1000
+            document.write('so tien phai tra la:' + cuoc + 'vnd')
+
+        } else {
+            var cuoc = so_phut * 2000
+            document.write('so tien phai tra la :' + cuoc + 'vnd')
+
+        }
+
+    </script>
+</body>
+
+</html>
