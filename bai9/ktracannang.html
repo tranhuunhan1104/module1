@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Nhập cân nặng:(kg)
+    <input type="text" name="" id="can_nang"><br>
+    Nhập chiều cao: (m)
+    <input type="text" name="" id="chieu_cao"><br>
+    <input onclick="xu_ly()" type="button" value="kiểm tra"><br>
+    <p id="show"></p>
+    <script>
+        function xu_ly() {
+            var can_nang = document.getElementById('can_nang').value;
+            let chieu_cao = document.getElementById('chieu_cao').value;
+            let bmi = can_nang / (chieu_cao ^ 2)
+            let show = '';
+            if (bmi < 18) {
+                show = `Chỉ số BMI là: ${bmi}  Bạn Gầy độ 3. Ăn thật nhiều vào nhé` + "<img src = 'https://i.pinimg.com/originals/3b/97/63/3b97635b6bd4a5bfc436fbd3908f05e0.gif' width='100' height= '100'>";
+            }
+            else if (bmi < 25.0) {
+                show = `Chỉ số BMI là: ${bmi}  Bạn béo độ 2. Ăn vừa vào nhé` + "<img src = 'https://i.pinimg.com/originals/73/4d/11/734d11cc677595ce3c3e5e3bba02721f.gif' width='100' height= '100'>";
+            }
+            else if (bmi < 30.0) {
+                show = `Chỉ số BMI là: ${bmi}  ngon rồi đấy. đạt tiêu chuẩn` + "<img src = 'https://i.pinimg.com/originals/3b/97/63/3b97635b6bd4a5bfc436fbd3908f05e0.gif' width='100' height= '100'>";
+            }
+            else {
+                show = `Chỉ số BMI là: ${bmi}  béo quái. ăn ít thôi ` + "<img src = 'https://i.pinimg.com/originals/73/4d/11/734d11cc677595ce3c3e5e3bba02721f.gif' width='100' height= '100'>";
+            }
+            document.getElementById("show").innerHTML = show;
+        }
+    </script>
+</body>
+
+</html>
