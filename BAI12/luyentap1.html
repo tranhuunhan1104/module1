@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Hãy viết một chương trình in ra các số từ 1 đến 100. Nhưng nếu số chia hết cho 3 thì in ra "Fizz", 5 thì in ra "Buzz" thay vì in ra số đó. Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".
+        
+        // let num;
+        // for (num = 1; num <= 100; num++) { 
+        //     if (num % 3 == 0 && num % 5 !== 0) {
+        //         document.write("Fizz" + "<br>");
+        //         continue;
+        //     } else if (num % 5 == 0 && num % 3 !== 0) {
+        //         document.write("Buzz" + "<br>");
+        //         continue;
+        //     } else if (num % 3 == 0 && num % 5 == 0) {
+        //         document.write("FizzBuzz" + "<br>");
+        //         continue;
+        //     }
+        //     document.write (num + "<br>");
+        // }
+
+
+
+        //     // Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành.
+        //     for(var i = 1; i <= 99; i ++){
+        //         document.write(i + '<br>')
+        //         if (i == 99) {
+        //             document.write('hoan thanh')
+                    
+                    
+        //         }
+               
+
+        //     }
+
+
+            //  Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập. Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ.
+            // var temperature = prompt('nhap nhiet do');
+            // if (temperature > 100) {
+            //     alert('giảm nhiệt độ')
+                
+            // } else if(temperature < 20) {
+            //     alert('tăng nhiệt độ')
+                
+            // }
+            // Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.
+            let sum = 0;
+            for(var i = 7 ; i <= 35 ; i += 7){
+                sum += i
+                document.write(i + '<br>')
+
+            }
+            document.write('tổng 30 số tự nhiên chia hết cho 7 đầu tiên là :'+ sum);
+
+    </script>
+    
+</body>
+</html>

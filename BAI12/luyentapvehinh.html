@@ -9,34 +9,59 @@
 </head>
 
 <body>
+    <!-- <script> -->
+        <!-- // for (var i = 1; i <= 5; i++) {
+        //     for (var k = 1; k <= i; k++) {
+        //         document.write('*')
+        //     }
+        //     document.write('<br>')
+        // }
+        // for (var i = 1; i <= 5; i++) {
+        //     for (var k = 1; k <= (6 - i); k++) {
+        //         document.write('*')
+        //     }
+        //     document.write('<br>')
+        // }
+        // let mytable = "<table>";
+        // for (let i = 1; i < 6; i++) {
+        //     mytable += "<tr>";
+        //     mytable += "<td>" + "&nbsp;&nbsp;".repeat(5 - i) + "*".repeat(i) + "</td>";
+        // }
+        // mytable += "</tr>";
+        // document.write(mytable);
+        // let num = "<table";
+        // for (let i = 5; i > 0; i--) {
+        //     num += "<tr>";
+        //     num += "<td>" + "&nbsp;&nbsp;".repeat(5 - i) + "*".repeat(i) + "</td>";
+        // }
+        // num += "</tr>";
+        // document.write(num); -->
+        nhập chiều dài hình chữ nhật:<br>
+    <input type="text" id="chieudai"> <br>
+    Nhập chiều rộng hình chữ nhật:<br>
+    <input type="text" id="chieurong"><br>
+    <input type="submit" value="in" onclick="inhinhchunhat()">
+    <p id="ketqua"></p>
     <script>
-        for (var i = 1; i <= 5; i++) {
-            for (var k = 1; k <= i; k++) {
-                document.write('*')
+        function inhinhchunhat() {
+            let chieudai = parseInt(document.querySelector("#chieudai").value)
+            let chieurong = parseInt(document.querySelector("#chieurong").value)
+            let str = ""
+            for (let i = 1; i <= chieurong; i++) {
+                for (let j = 1; j <= chieudai; j++) {
+                    if (i == 1 || i == chieurong || j == 1 || j == chieudai) {
+                        str += "*"
+                    }
+                    else {
+                        str += "&nbsp" + "&nbsp"
+                    }
+                }
+                str += "<br>"
             }
-            document.write('<br>')
+            document.querySelector("#ketqua").innerHTML = str
         }
-        for (var i = 1; i <= 5; i++) {
-            for (var k = 1; k <= (6 - i); k++) {
-                document.write('*')
-            }
-            document.write('<br>')
-        }
-        let mytable = "<table>";
-        for (let i = 1; i < 6; i++) {
-            mytable += "<tr>";
-            mytable += "<td>" + "&nbsp;&nbsp;".repeat(5 - i) + "*".repeat(i) + "</td>";
-        }
-        mytable += "</tr>";
-        document.write(mytable);
-        let num = "<table";
-        for (let i = 5; i > 0; i--) {
-            num += "<tr>";
-            num += "<td>" + "&nbsp;&nbsp;".repeat(5 - i) + "*".repeat(i) + "</td>";
-        }
-        num += "</tr>";
-        document.write(num);
     </script>
+    <!-- </script> -->
 </body>
 
 </html>
