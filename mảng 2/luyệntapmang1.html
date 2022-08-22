@@ -1,0 +1,259 @@
+<script>
+    // khai báo mảng
+    var books = ['van', 'su', 'dia'];
+    //             0     1    2
+    var books_2 = new Array('van', 'su', 'dia');
+    //truy xuất phân tử:văn
+    console.log(books[0]);
+    console.log(books[1]);
+    console.log(books[2]);
+    //xem độ dài của mảng
+    console.log(books.length);
+    //dùng vòng lặp
+    for (var i = 0; i < 3; i++) {
+        console.log(books[i]);
+    }
+    // thay thế phân tử bằng giá trị mới
+    books[0] = 'van hoc';
+    books[1] = 'lich su';
+    books[2] = 'dia ly';
+    //thêm phân tử vào mảng
+    books.push('toan')
+    //thêm phân thử vào mảng length
+    var books = ['van', 'su', 'dia', 'toan', 'vat ly'];
+    //             0     1    2      3      4
+    books[4] = 'vat ly';
+    books[books.length] = 'hoa';
+    console.log(books.length)
+    console.log(books);
+    var numbers = [];
+    for (var i = 0; i <= 10; i++) {
+        numbers.push(i)
+    }
+    console.log(numbers)
+    var numbers = [];
+    for (var i = 2; i <= 9; i++) {
+        numbers.push(i)
+    }
+    console.log(numbers)
+    var numbers = [];
+    for (var i = 0; i <= 10; i++) {
+        if (i % 2 == 0) {
+            numbers.push(i)
+        }
+    }
+    console.log(numbers)
+    var numbers = [];
+    var total = 0;
+    for (var i = 0; i <= 10; i++) {
+        if (i % 2 == 0) {
+            numbers.push(i)
+            total = total + i;
+        }
+    }
+    console.log(numbers)
+    console.log(total)
+    var numbers = [];
+    var total = 0;
+    for (var i = 1; i <= 100; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            numbers.push('fizzbuzz')
+        } else if (i % 3 == 0) {
+            numbers.push('fizz')
+        } else if (i % 5 == 0) {
+            numbers.push('buzz')
+        } else {
+            numbers.push(i)
+        }
+    }
+    console.log(numbers)
+</script>
+<script>
+    // khai báo mảng
+    var books = ['van', 'su', 'dia'];
+    //             0     1    2
+    var books_2 = new Array('van', 'su', 'dia');
+    //truy xuất phân tử:văn
+    console.log(books[0]);
+    console.log(books[1]);
+    console.log(books[2]);
+    //xem độ dài của mảng
+    console.log(books.length);
+    //dùng vòng lặp
+    for (var i = 0; i < 3; i++) {
+        console.log(books[i]);
+    }
+    // thay thế phân tử bằng giá trị mới
+    books[0] = 'van hoc';
+    books[1] = 'lich su';
+    books[2] = 'dia ly';
+    //thêm phân tử vào mảng
+    books.push('toan')
+    //thêm phân thử vào mảng length
+    var books = ['van', 'su', 'dia', 'toan', 'vat ly'];
+    //             0     1    2      3      4
+    books[4] = 'vat ly';
+    books[books.length] = 'hoa';
+    console.log(books.length)
+    console.log(books);
+    var numbers = [];
+    for (var i = 0; i <= 10; i++) {
+        numbers.push(i)
+    }
+    console.log(numbers)
+    var numbers = [];
+    for (var i = 2; i <= 9; i++) {
+        numbers.push(i)
+    }
+    console.log(numbers)
+    var numbers = [];
+    for (var i = 0; i <= 10; i++) {
+        if (i % 2 == 0) {
+            numbers.push(i)
+        }
+    }
+    console.log(numbers)
+    var numbers = [];
+    var total = 0;
+    for (var i = 0; i <= 10; i++) {
+        if (i % 2 == 0) {
+            numbers.push(i)
+            total = total + i;
+        }
+    }
+    console.log(numbers)
+    console.log(total)
+    var numbers = [];
+    var total = 0;
+    for (var i = 1; i <= 100; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            numbers.push('fizzbuzz')
+        } else if (i % 3 == 0) {
+            numbers.push('fizz')
+        } else if (i % 5 == 0) {
+            numbers.push('buzz')
+        } else {
+            numbers.push(i)
+        }
+    }
+    console.log(numbers)
+</script>
+Nouveau
+
+
+Thắng Nguyễn
+9 h 39
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="bai_1" onclick="bai_1()">
+    <input type="button" value="bai_2" onclick="bai_2()">
+    <input type="button" value="bai_3" onclick="bai_3()">
+    <input type="button" value="bai_4" onclick="bai_4()">
+    <input type="button" value="bai_5" onclick="bai_5()">
+    <input type="button" value="bai_6" onclick="bai_6()">
+    <input type="button" value="bai_7" onclick="bai_7()">
+    <input type="button" value="bai_8" onclick="bai_8()">
+    <input type="button" value="bai_9" onclick="bai_9()">
+    <script>
+        function bai_1() {
+            var dem = 0;
+            var number = [1, 2, 3, 4, 5, 6, 7, 8, 19, 10];
+            for (i = 0; i < number.length; i++) {
+                if (number[i] >= 10) {
+                    dem++
+                }
+            }
+            console.log(dem)
+        }
+        function bai_2() {
+            var number = [1, 2, 3, 4, 5, 6, 7, 8, 19, 10];
+            var max = number[0];
+            var vt = number[0];
+            for (i = 0; i < number.length; i++) {
+                if (max < number[i]) {
+                    max = number[i];
+                    vt = i;
+                }
+            }
+            console.log('Max: ' + max);
+            console.log('Vi tri: ' + vt);
+        }
+        function bai_3() {
+            var number = [1, 2, 3, 4, 5, 6, 7, 8, 19, 10];
+            var max = number[0];
+            var total = 0;
+            for (i = 0; i < number.length; i++) {
+                total += number[i];
+                if (max < number[i]) {
+                    max = number[i]
+                }
+            }
+            console.log('Max: ' + max);
+            console.log(' Gia tri trung binh: ' + total / number.length);
+        }
+        function bai_4() {
+            var number = [2, 4, 6, 8, 10, 1, 3, 5, 7, 9];
+            console.log(number.reverse())
+        }
+        function bai_5() {
+            var x = "rdftgyhujiaă";
+            var b = x.split("");
+            var total = 0;
+            for (var x = 0; x < b.length; x++) {
+                if (b[x] == 'a' || b[x] == 'ă' || b[x] == 'â' || b[x] == 'e' || b[x] == 'ê' || b[x] == 'i' || b[x] == 'o' || b[x] == 'ô' || b[x] == 'ơ' || b[x] == 'u' || b[x] == 'ư' || b[x] == 'y') {
+                    total += 1;
+                }
+            }
+            console.log(total);
+        }
+        function bai_6() {
+            var number = [2, 3, 4, 6, 8, 9, 1, 13, 16, 20];
+            var V = prompt('nhap V');
+            for (i = 0; i < number.length; i++) {
+                if (V == number[i]) {
+                    console.log('V is in the array')
+                } else {
+                    console.log('V is not in the array')
+                }
+            }
+        }
+        function bai_7() {
+            var a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            var b = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+            var c = [];
+            c.push(a.concat(b))
+            console.log(c)
+        }
+        function bai_8() {
+            var number = [2, 4, 3, 5, 6, 8];
+            var n = prompt('nhap n')
+            function tryRemoveFromArray(number, x) {
+                for (var i = 0; i < number.length; i++) {
+                    if (number[i] == x) {
+                        number.splice(i, 1)
+                    }
+                }
+                document.write(number)
+            }
+            tryRemoveFromArray(number, n)
+        }
+        function bai_9() {
+            var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            number.sort(function (a, b) {
+                return b - a;
+            });
+            console.log(number)
+        }
+    </script>
+</body>
+
+</html>
