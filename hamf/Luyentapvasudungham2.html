@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function binh_phuong(a){
+        //     return a*a
+        // }
+        // let a = binh_phuong(5)
+        // alert(a)
+
+
+        // function chu_vi(r){
+        //     return 2*r*3.14
+        // }
+        // let C = chu_vi(4)
+        // console.log('chu vi hinh tron la : '+ C);
+
+        // function dien_tich(r){
+        //     return 3.14*r*r
+        // }
+        // let S = dien_tich(4)
+        // console.log('dien tich hinh tron la : '+ S);
+
+
+
+
+
+        // function kiem_tra_so(gia_tri){
+        //     if ( typeof gia_tri == 'number') {
+        //         return true
+        //     } else {
+        //         return false
+        //     }
+        // }
+        // console.log(kiem_tra_so(5))
+        // console.log(kiem_tra_so('ccc'));
+
+
+
+        // Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+
+
+    //     function so_nguyen( a , b ,c ){
+    //         if ( a < b && a < c ) {
+    //             return a
+    //         } else if( b < a && b < c){
+    //             return b
+    //         } else{
+    //             return c
+    //         }
+    //     }
+    //    console.log(so_nguyen(4,5,6)); 
+
+
+
+        // Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.
+
+    //     let a = prompt('enter number')
+    //     function so_nguyen_duong(a){
+    //         if ( a > 0 && a % 1 == 0) {
+    //         return (a+' la so nguyen duong')
+    //         } else {
+    //             return (a+' khong phai so nguyen duong')
+    //         }
+    //     }
+    //    alert( so_nguyen_duong(a))
+
+
+        // Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+
+
+        // function so_nguyen(a ,b){
+        //     let c = a
+        //     a = b
+        //     b = c 
+        //     console.log(a,b)
+
+        // }
+        // so_nguyen(4,5)
+
+
+        // Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó
+
+            function so_nguyen(x){
+                var first = 0
+                var last = x.length
+            for(var i = 0 ; i < (x.length/2) ; i++){
+                let b = x[first];
+            x[first] = x[last];
+            x[last] = b;
+            first++;
+            last--;
+            }    
+         
+            return x
+
+            
+        }
+        
+        var mang = [6,7,5,9,0]
+
+        console.log(so_nguyen(mang));
+        
+
+    </script>
+</body>
+</html>

@@ -1,74 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
+    <label for="string">Nhập tên sao: </label>
+    <input type="text" name="" id="string">
+    <button onclick="nhap()">tìm kếm</button>
+    <p id="result"></p>
+    
     <script>
         // Bài 1: Tạo hàm alertMessage() hiển thị hộp thoại chứa chuỗi  "Xin chao". Gọi hàm từ trong phần <body> của trang web.
-        // function alertMessage(){
-        //     console.log('xin chao')
-        // }
-        // alertMessage()
+            // function alertMessage(){
+            //     console.log('xin chao')
+            // }
+            // alertMessage()
 
 
         // Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm. Gọi hàm từ trong phần <body> của trang web và hiển thị kết quả lên màn hình
 
-        // function a(a){
-        // console.log(a+1)
-        // }
-        // a(4)
+            // function a(a){
+            // console.log(a+1)
+            // }
+            // a(4)
 
-        // Bài 3: Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng. Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.    
+            // Bài 3: Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng. Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.    
 
 
         //    function tham_so( a,b){
         //     if (a>b) {
         //         return 'a>b'
-
+                
         //     } else {
         //         return a+b
-
+                
         //     }}
-
+            
         //     alert( tham_so(8,6))
 
-        // bai5
-        let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
-        let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
-
-        function check_star(star) {
-            let index_star1 = 0;
-            let result = "";
-            for (let i = 0; i < star1.length; i++) {
-                if (star == star1[i]) {
-                    index_star1 = i;
-                    for (let j = 0; j < star2.length; j++) {
-                        if (index_star1 == j) {
-                            result = star2[j];
-                            return result;
-                        } else {
-                            result = "Không tìm thấy chòm sao"
-                            return result;
-                        }
-                    }
-                } else {
-                    result = "Không tìm thấy sao";
-                    return result;
+            // bai5
+    //         <label for="string">Nhập từ: </label>
+    // <input type="text" name="" id="string">
+    // <button onclick="nhap()">translate</button>
+    // <p id="result"></p>
+    // <script>
+        function nhap() {
+            let star1 = [ 'Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus'];
+            let star2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+            for (let i = 0, j = 0; i < star1.length, j <star2.length; i++, j++) {
+                let string = document.getElementById("string").value;
+                if (string === star1[i]) {
+                    alert(star2[i]);
+                    break;
                 }
-            }
-
-        }
-        let star = prompt("Nhập vào ngôi sao: ")
-        document.write(check_star(star));
-
-
-    </script>
+                else if (string === star2[i]) {
+                    alert(star1[i]);
+                    break;
+                }
+            }}
+     </script>
 </body>
-
 </html>
