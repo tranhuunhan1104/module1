@@ -3,38 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body>
-    <script>
-        let Rectangle = function (chieu_dai, chieu_rong) {
-            this.chieu_dai = chieu_dai;
-            this.chieu_rong = chieu_rong;
-
-            this.getChieu_dai = function () {
-                return this.chieu_dai;
-            }
-            this.getChieu_rong = function () {
-                return this.chieu_rong;
-            }
-            this.getChu_vi = function () {
-                return this.chieu_dai * 2 + this.chieu_rong * 2;
-            }
-            this.getDien_tich = function () {
-                return this.chieu_dai * this.chieu_rong;
-            }
-        }
-        let rectangle = new Rectangle(prompt('nhap chieu dai'), prompt('nhap chieu rong'))
-        let chu_vi = rectangle.getChu_vi();
-        let dien_tich = rectangle.getDien_tich();
-        alert(chu_vi);
-        alert(dien_tich)
-
-
-    </script>
+    <canvas id="myCanvas" width="1000" height="500" style="border: solid 1px #d3d3d3;"></canvas>
 </body>
 
 </html>
+
+<script>
+    function Retangle(width, height) {
+        this.width = width;
+        this.height = height;
+
+        this.area = function() {
+            return width * height;
+        }
+
+        this.perimeter = function() {
+            return 2 * (width + height);
+        }
+    }
+
+    function drawRetangle(shape) {
+        let ctx = document.getElementById("myCanvas").getContext("2d");
+        // /let shape = new Retangle(w, h);
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(40, 40, shape.width, shape.height);
+    }
+
+
+    let shape1 = new Retangle(prompt('nhap chieu dai'),prompt('nhap chieu rong'));
+    drawRetangle(shape1);
+
+    alert(shape1.area());
+</script>
