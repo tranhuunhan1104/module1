@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let Rectangle = function (chieu_dai, chieu_rong) {
+            this.chieu_dai = chieu_dai;
+            this.chieu_rong = chieu_rong;
+
+            this.getChieu_dai = function () {
+                return this.chieu_dai;
+            }
+            this.getChieu_rong = function () {
+                return this.chieu_rong;
+            }
+            this.getChu_vi = function () {
+                return this.chieu_dai * 2 + this.chieu_rong * 2;
+            }
+            this.getDien_tich = function () {
+                return this.chieu_dai * this.chieu_rong;
+            }
+        }
+        let rectangle = new Rectangle(prompt('nhap chieu dai'), prompt('nhap chieu rong'))
+        let chu_vi = rectangle.getChu_vi();
+        let dien_tich = rectangle.getDien_tich();
+        alert(chu_vi);
+        alert(dien_tich)
+
+
+    </script>
+</body>
+
+</html>
