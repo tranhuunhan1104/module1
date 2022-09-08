@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1> PHẦN MỀM QUẢN LÍ HỌC VIÊN </h1>
+</head>
+
+<body>
+    <table border="1">
+        <tr id="id1">
+            <th colspan="2"> THÔNG TIN SẢN PHẨM</th>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td><input type="number" id="id"></td>
+        </tr>
+        <tr>
+            <td> TÊN SẢN PHẨM </td>
+            <td><input type="text" id="full name"> </td>
+        </tr>
+        <tr>
+            <td> GIÁ TIỀN </td>
+            <td><input type="text" id="money"> </td>
+        </tr>
+        <tr>
+            <td>SỐ LƯỢNG HÀNG</td>
+            <td><input type="text" id="so luong hang"> </td>
+        </tr>
+        <tr>
+            <td>THỜI GIAN BẢO HÀNH</td>
+            <td><input type="text" id="time"> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input onclick="addsanpham()" type="button" style="background-color: red;color:white" value="ADD"
+                    id="add"></td>
+        </tr>
+    </table>
+    <table style="border: 1px solid black; width: 700px; float:right" border="1">
+        <tr>
+            <th colspan="7">QUẢN LÍ SẢN PHẨM</th>
+
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>TÊN SẢN PHẨM</th>
+            <th>GIÁ TIỀN</th>
+            <th>SỐ LƯỢNG HÀNG</th>
+            <th>THỜI GIAN BẢO HÀNH</th>
+            <th>TÙY CHỌN</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input onclick="xoasanpham()" type="button" style="background-color: red;color:white" value="delete">
+                <input onclick="suasanpam()" type="button" style="background-color: orange;color:white" value="edit">
+            </td>
+        </tr>
+</body>
+</html>

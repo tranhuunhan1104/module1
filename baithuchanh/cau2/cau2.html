@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var number = [2, 3, 5, 7, 9];
+        var index = prompt("nhập index:");
+        var x = prompt("nhập x");
+        var numberNew = [];
+        function insertNumberToArray(index, x) {
+            for (var i = 0; i <= number.length; i++) {
+                if (index < 0 || index > number.length) {
+                    numberNew = number;
+                } else {
+                    if (index > i) {
+                        numberNew[i] = number[i];
+                    }
+                    if (index == i) {
+                        numberNew[index] = x;
+                    }
+                    if (index < i) {
+                        numberNew[i] = number[i - 1]
+                    }
+                }
+            }
+            return numberNew;
+        } 
+        alert("mảng ban đầu: [" +number + "]<br>");
+        if(insertNumberToArray(index, x)===number){
+            alert("mảng trả về: [" +number + "]<br>");
+        }else{
+            alert("mảng trả về: [ " + insertNumberToArray(index, x) + "]");
+        }
+        
+    </script>
+</body>
+</html>
